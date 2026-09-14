@@ -1,4 +1,10 @@
-const navItems = ['Services', 'Work', 'Process', 'About', 'Contact'];
+const navItems = [
+    { label: 'Services', href: '#services' },
+    { label: 'Work', href: '#work' },
+    { label: 'Process', href: '#process' },
+    { label: 'About', href: '#about' },
+    { label: 'Contact', href: '/contact' },
+];
 
 const stats = [
     { value: '8+', label: 'years of combined experience' },
@@ -82,14 +88,14 @@ export default function RepenaLanding() {
 
                     <nav className="hidden items-center gap-8 text-sm text-slate-200 md:flex">
                         {navItems.map((item) => (
-                            <a key={item} href={`#${item.toLowerCase()}`} className="transition hover:text-white">
-                                {item}
+                            <a key={item.label} href={item.href} className="transition hover:text-white">
+                                {item.label}
                             </a>
                         ))}
                     </nav>
 
                     <a
-                        href="#contact"
+                        href="/contact"
                         className="rounded-full border border-white/20 bg-white/5 px-5 py-2 text-sm font-medium text-white transition hover:bg-white/10"
                     >
                         Book a call
