@@ -66,23 +66,23 @@ const highlights = [
 export default function RepenaLanding() {
     return (
         <div className="min-h-screen bg-slate-50 text-slate-900">
-            <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-xl">
+            <header className="sticky top-0 z-50 border-b border-white/10 bg-[#041e2a]/80 backdrop-blur-xl">
                 <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
                     <div className="flex items-center gap-3">
                         <img
                             src="/repena-logo.svg"
                             alt="Repena logo"
-                            className="h-12 w-12 rounded-2xl object-cover shadow-lg shadow-[#5AA9E6]/20"
+                            className="h-11 w-11 rounded-2xl object-cover shadow-lg shadow-[#5AA9E6]/20"
                         />
                         <div>
-                            <p className="text-lg font-semibold tracking-tight text-slate-900">Repena</p>
-                            <p className="text-[10px] uppercase tracking-[0.25em] text-slate-500">South Sudan</p>
+                            <p className="text-lg font-semibold tracking-tight text-white">Repena</p>
+                            <p className="text-[10px] uppercase tracking-[0.25em] text-slate-300">South Sudan</p>
                         </div>
                     </div>
 
-                    <nav className="hidden items-center gap-8 text-sm text-slate-600 md:flex">
+                    <nav className="hidden items-center gap-8 text-sm text-slate-200 md:flex">
                         {navItems.map((item) => (
-                            <a key={item} href={`#${item.toLowerCase()}`} className="transition hover:text-slate-900">
+                            <a key={item} href={`#${item.toLowerCase()}`} className="transition hover:text-white">
                                 {item}
                             </a>
                         ))}
@@ -90,7 +90,7 @@ export default function RepenaLanding() {
 
                     <a
                         href="#contact"
-                        className="rounded-full bg-[#5AA9E6] px-5 py-2 text-sm font-medium text-white transition hover:bg-[#4b9ad9]"
+                        className="rounded-full border border-white/20 bg-white/5 px-5 py-2 text-sm font-medium text-white transition hover:bg-white/10"
                     >
                         Book a call
                     </a>
@@ -98,93 +98,97 @@ export default function RepenaLanding() {
             </header>
 
             <main>
-                <section className="relative overflow-hidden">
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(90,169,230,0.18),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(90,169,230,0.10),_transparent_28%)]" />
-                    <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pb-20 pt-16 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:pt-24">
-                        <div>
-                            <p className="mb-5 inline-flex rounded-full border border-[#5AA9E6]/40 bg-[#5AA9E6]/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-[#4d9ad7]">
-                                Multi-sector company • South Sudan
-                            </p>
-                            <h1 className="max-w-xl text-4xl font-black leading-tight tracking-tight text-slate-900 md:text-6xl">
-                                We help ambitious businesses grow with clarity, creativity, and technology.
-                            </h1>
-                            <p className="mt-6 max-w-lg text-lg text-slate-600">
-                                Repena brings together branding, software, and growth strategy to help organizations in
-                                South Sudan and beyond build stronger systems, better experiences, and lasting momentum.
+                <section className="relative overflow-hidden bg-[#031d29] text-white">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(93,223,215,0.22),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(93,223,215,0.14),_transparent_24%),linear-gradient(135deg,_#031d29_0%,_#052c3a_32%,_#0a2d39_60%,_#071d29_100%)]" />
+                    <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:70px_70px] opacity-70" />
+                    <div className="absolute left-1/2 top-1/3 h-80 w-80 -translate-x-1/2 rounded-full bg-[#4bd3c1]/20 blur-3xl" />
+                    <div className="absolute right-10 top-24 h-3 w-3 rounded-full bg-[#6be0cf] shadow-[0_0_18px_rgba(107,224,207,0.9)]" />
+                    <div className="absolute left-28 top-1/4 h-2.5 w-2.5 rounded-full bg-[#6be0cf] shadow-[0_0_18px_rgba(107,224,207,0.8)]" />
+                    <div className="absolute bottom-20 right-24 h-2.5 w-2.5 rounded-full bg-[#6be0cf] shadow-[0_0_18px_rgba(107,224,207,0.8)]" />
+
+                    <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-12 lg:px-8 lg:pt-16">
+                        <div className="mx-auto max-w-5xl text-center">
+                            <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-slate-100 backdrop-blur-sm">
+                                <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-[#5dd7d4] text-[9px] font-black text-slate-900">
+                                    ?
+                                </span>
+                               Repena — from the Arabic for “question”
+                            </div>
+
+                            <p className="mt-9 text-sm font-semibold uppercase tracking-[0.35em] text-[#8fe8db]">
+                                Every great project starts with a question.
                             </p>
 
-                            <div className="mt-8 flex flex-wrap gap-4">
+                            <h1 className="mt-8 text-4xl font-black leading-[0.95] tracking-[-0.06em] text-white md:text-7xl">
+                                Need a solution people rem<span className="text-[#66e0d9]">eber</span>?<span className="inline-block w-2.5 animate-pulse border-l-2 border-[#66e0d9] pl-2 align-middle" />
+                            </h1>
+
+                            <p className="mx-auto mt-8 max-w-3xl text-lg text-slate-300">
+                                We answer with design that shows, software that scales, and AI automation that turns your ideas into measurable momentum.
+                            </p>
+
+                            <div className="mt-10 flex flex-wrap justify-center gap-4">
                                 <a
                                     href="#services"
-                                    className="rounded-full bg-[#5AA9E6] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#4b9ad9]"
+                                    className="rounded-full border border-[#66e0d9]/50 bg-[#66e0d9] px-6 py-3 text-sm font-semibold text-slate-900 shadow-[0_0_20px_rgba(102,224,217,0.35)] transition hover:bg-[#7fe8e0]"
                                 >
-                                    Explore services
+                                    I need a brand
                                 </a>
                                 <a
                                     href="#work"
-                                    className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#5AA9E6] hover:text-[#4b9ad9]"
+                                    className="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
                                 >
-                                    See our work
+                                    I need a website or app
+                                </a>
+                                <a
+                                    href="#process"
+                                    className="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                                >
+                                    I need AI & automation
+                                </a>
+                                <a
+                                    href="#contact"
+                                    className="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                                >
+                                    Show me your work
                                 </a>
                             </div>
 
-                            <div className="mt-10 grid gap-4 sm:grid-cols-3">
-                                {stats.map((item) => (
-                                    <div key={item.label} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm shadow-slate-200/50">
-                                        <p className="text-2xl font-black text-[#5AA9E6]">{item.value}</p>
-                                        <p className="mt-2 text-sm text-slate-600">{item.label}</p>
-                                    </div>
-                                ))}
+                            <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+                                <a
+                                    href="#contact"
+                                    className="inline-flex items-center justify-center gap-2 rounded-full bg-[#5acfc3] px-7 py-3 text-base font-semibold text-slate-900 shadow-[0_0_25px_rgba(90,207,195,0.45)] transition hover:bg-[#78ddd2]"
+                                >
+                                    Ask your question
+                                    <span aria-hidden="true">→</span>
+                                </a>
+                                <a
+                                    href="#contact"
+                                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 bg-white/5 px-7 py-3 text-base font-semibold text-white transition hover:bg-white/10"
+                                >
+                                    <span className="inline-flex h-5 w-5 items-center justify-center rounded-full border border-white/50 text-xs">◔</span>
+                                    WhatsApp us
+                                </a>
                             </div>
                         </div>
 
-                        <div className="relative">
-                            <div className="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-100 via-white to-slate-200 p-4 shadow-2xl shadow-[#5AA9E6]/10">
-                                <div className="rounded-[1.5rem] border border-slate-200 bg-white p-6">
-                                    <div className="mb-6 flex items-center justify-between">
-                                        <div>
-                                            <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Repena Growth Dashboard</p>
-                                            <p className="mt-2 text-2xl font-bold text-slate-900">Q3 performance</p>
-                                        </div>
-                                        <div className="rounded-full bg-emerald-500/10 px-3 py-1 text-sm font-medium text-emerald-600">
-                                            +34.8%
-                                        </div>
+                        <div className="mt-20 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                            {[
+                                { number: '01', title: 'Understand the need' },
+                                { number: '02', title: 'Shape the solution' },
+                                { number: '03', title: 'Build and launch' },
+                                { number: '04', title: 'Improve and grow' },
+                            ].map((step) => (
+                                <div
+                                    key={step.number}
+                                    className="rounded-[1.6rem] border border-white/10 bg-white/90 p-5 text-slate-900 shadow-[0_24px_80px_rgba(2,11,16,0.18)] backdrop-blur-sm"
+                                >
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{step.number}</span>
                                     </div>
-
-                                    <div className="space-y-6">
-                                        <div>
-                                            <div className="mb-2 flex justify-between text-sm text-slate-600">
-                                                <span>Brand reach</span>
-                                                <span>84%</span>
-                                            </div>
-                                            <div className="h-2 rounded-full bg-slate-200">
-                                                <div className="h-2 w-[84%] rounded-full bg-gradient-to-r from-[#5AA9E6] via-[#7bb8ea] to-[#a8d1f4]" />
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div className="mb-2 flex justify-between text-sm text-slate-600">
-                                                <span>Conversion uplift</span>
-                                                <span>67%</span>
-                                            </div>
-                                            <div className="h-2 rounded-full bg-slate-200">
-                                                <div className="h-2 w-[67%] rounded-full bg-gradient-to-r from-sky-400 via-[#5AA9E6] to-indigo-500" />
-                                            </div>
-                                        </div>
-
-                                        <div className="grid gap-4 sm:grid-cols-2">
-                                            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                                                <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Leads</p>
-                                                <p className="mt-2 text-3xl font-black text-slate-900">1,248</p>
-                                            </div>
-                                            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                                                <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Retention</p>
-                                                <p className="mt-2 text-3xl font-black text-slate-900">92%</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <h3 className="mt-4 text-2xl font-bold tracking-tight text-slate-900">{step.title}</h3>
                                 </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </section>
