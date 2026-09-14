@@ -17,21 +17,61 @@ const services = [
         title: 'Brand & Design',
         description:
             'Visual identity, marketing assets, and customer-facing experiences designed to help ambitious brands stand out in fast-moving markets.',
+        theme: 'sky',
     },
     {
         title: 'Software Development',
         description:
             'Modern web platforms, internal tools, and digital systems built for reliability, scale, and measurable business impact.',
+        theme: 'emerald',
     },
     {
         title: 'Growth Strategy',
         description:
             'Marketing systems, digital campaigns, and conversion-focused work that turns attention into lasting customer relationships.',
+        theme: 'amber',
     },
     {
         title: 'Business Enablement',
         description:
             'Operational support and strategic consulting for organizations that need practical systems and sharper execution.',
+        theme: 'violet',
+    },
+    {
+        title: 'Trainings & Consultancy',
+        description:
+            'Practical capacity-building programs, advisory support, and coaching to help teams strengthen skills and improve decision-making.',
+        theme: 'rose',
+    },
+    {
+        title: 'Supply',
+        description:
+            'Reliable sourcing and supply support for organizations that need efficient procurement, timely delivery, and trusted operational partners.',
+        theme: 'teal',
+    },
+    {
+        title: 'Research',
+        description:
+            'Evidence-driven research that helps organizations understand markets, user needs, trends, and opportunities with confidence.',
+        theme: 'indigo',
+    },
+    {
+        title: 'Data Collection & Analysis',
+        description:
+            'Structured data gathering and analysis services that turn raw information into clear insight, reporting, and actionable recommendations.',
+        theme: 'cyan',
+    },
+    {
+        title: 'Early Warning Systems',
+        description:
+            'Monitoring tools and alert frameworks designed to detect risks early and support faster, better-informed responses.',
+        theme: 'orange',
+    },
+    {
+        title: 'AI for Good',
+        description:
+            'Ethical and practical AI solutions for public impact, social good, learning, and efficiency across mission-driven organizations.',
+        theme: 'lime',
     },
 ];
 
@@ -206,13 +246,62 @@ export default function RepenaLanding() {
                     </div>
 
                     <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-                        {services.map((service) => (
-                            <article key={service.title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm shadow-slate-200/50 transition hover:-translate-y-1 hover:border-[#5AA9E6]/50 hover:shadow-md hover:shadow-[#5AA9E6]/10">
-                                <div className="mb-5 h-12 w-12 rounded-2xl bg-gradient-to-br from-[#5AA9E6] to-[#7bb8ea]" />
-                                <h3 className="text-xl font-bold text-slate-900">{service.title}</h3>
-                                <p className="mt-4 text-sm leading-6 text-slate-600">{service.description}</p>
-                            </article>
-                        ))}
+                        {services.map((service) => {
+                            const themeStyles = {
+                                sky: {
+                                    card: 'border-[#5AA9E6]/40 bg-[#f3f9ff] shadow-[#5AA9E6]/10',
+                                    icon: 'from-[#5AA9E6] to-[#7bb8ea]',
+                                },
+                                emerald: {
+                                    card: 'border-[#34d399]/40 bg-[#f0fdf7] shadow-[#34d399]/10',
+                                    icon: 'from-[#34d399] to-[#6ee7b7]',
+                                },
+                                amber: {
+                                    card: 'border-[#fbbf24]/40 bg-[#fffaf0] shadow-[#fbbf24]/10',
+                                    icon: 'from-[#fbbf24] to-[#fcd34d]',
+                                },
+                                violet: {
+                                    card: 'border-[#a78bfa]/40 bg-[#f5f3ff] shadow-[#a78bfa]/10',
+                                    icon: 'from-[#a78bfa] to-[#c4b5fd]',
+                                },
+                                rose: {
+                                    card: 'border-[#fb7185]/40 bg-[#fff1f2] shadow-[#fb7185]/10',
+                                    icon: 'from-[#fb7185] to-[#fda4af]',
+                                },
+                                teal: {
+                                    card: 'border-[#2dd4bf]/40 bg-[#f0fdfa] shadow-[#2dd4bf]/10',
+                                    icon: 'from-[#2dd4bf] to-[#5eead4]',
+                                },
+                                indigo: {
+                                    card: 'border-[#818cf8]/40 bg-[#eef2ff] shadow-[#818cf8]/10',
+                                    icon: 'from-[#818cf8] to-[#a5b4fc]',
+                                },
+                                cyan: {
+                                    card: 'border-[#22d3ee]/40 bg-[#ecfeff] shadow-[#22d3ee]/10',
+                                    icon: 'from-[#22d3ee] to-[#67e8f9]',
+                                },
+                                orange: {
+                                    card: 'border-[#f97316]/40 bg-[#fff7ed] shadow-[#f97316]/10',
+                                    icon: 'from-[#f97316] to-[#fb923c]',
+                                },
+                                lime: {
+                                    card: 'border-[#84cc16]/40 bg-[#f7fee7] shadow-[#84cc16]/10',
+                                    icon: 'from-[#84cc16] to-[#a3e635]',
+                                },
+                            };
+                            const styles = themeStyles[service.theme] || themeStyles.sky;
+
+                            return (
+                                <article
+                                    key={service.title}
+                                    className={`rounded-3xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md ${styles.card}`}
+                                >
+                                    <div className={`mb-5 h-12 w-12 rounded-2xl bg-gradient-to-br ${styles.icon}`} />
+                                    <h3 className="text-xl font-bold text-slate-900">{service.title}</h3>
+                                    <p className="mt-4 text-sm leading-6 text-slate-700">{service.description}</p>
+                                </article>
+                            );
+                        })}
                     </div>
                 </section>
 
