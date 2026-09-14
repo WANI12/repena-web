@@ -372,15 +372,114 @@ export default function RepenaLanding() {
                 </section>
             </main>
 
-            <footer className="border-t border-slate-200 bg-white">
-                <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between lg:px-8">
-                    <p>© 2026 Repena. Built for growth in South Sudan.</p>
-                    <div className="flex gap-5">
-                        <a href="#services" className="hover:text-[#4b9ad9]">Services</a>
-                        <a href="#work" className="hover:text-[#4b9ad9]">Work</a>
-                        <a href="#contact" className="hover:text-[#4b9ad9]">Contact</a>
+            <footer className="bg-[#021d2a] text-white">
+                <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+                    <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+                        <div>
+                            <div className="flex items-center gap-3">
+                                <img
+                                    src="/repena-logo.svg"
+                                    alt="Repena logo"
+                                    className="h-12 w-12 rounded-2xl object-cover shadow-lg shadow-[#5AA9E6]/20"
+                                />
+                                <div>
+                                    <p className="text-2xl font-semibold tracking-tight text-white">Repena</p>
+                                    <p className="text-[10px] uppercase tracking-[0.25em] text-slate-300">South Sudan</p>
+                                </div>
+                            </div>
+
+                            <p className="mt-6 max-w-md text-base leading-7 text-slate-300">
+                                Branding, websites, apps, custom systems, AI automation, digital marketing and growth support for businesses that want practical execution.
+                            </p>
+
+                            <div className="mt-7 flex gap-3">
+                                <a
+                                    href="#"
+                                    className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
+                                >
+                                    LinkedIn
+                                </a>
+                                <a
+                                    href="#"
+                                    className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
+                                >
+                                    Facebook
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-semibold text-white">Services</h3>
+                            <div className="mt-5 space-y-3 text-base text-slate-300">
+                                <p>Branding &amp; Visual Identity</p>
+                                <p>UI/UX Design</p>
+                                <p>Websites &amp; Digital Presence</p>
+                                <p>Mobile Experiences</p>
+                                <p>Custom Software</p>
+                                <p>Online Sales &amp; Digital Offers</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-semibold text-white">Explore</h3>
+                            <div className="mt-5 space-y-3 text-base text-slate-300">
+                                <a href="#work" className="block transition hover:text-white">Work</a>
+                                <a href="#process" className="block transition hover:text-white">Process</a>
+                                <a href="#" className="block transition hover:text-white">Packages</a>
+                                <a href="#about" className="block transition hover:text-white">About</a>
+                                <a href="#" className="block transition hover:text-white">Blog</a>
+                                <a href="/contact" className="block transition hover:text-white">Contact</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-semibold text-white">Contact</h3>
+                            <div className="mt-5 space-y-3 text-base text-slate-300">
+                                <a href="mailto:info@repena.co" className="block transition hover:text-white">info@repena.co</a>
+                                <a href="tel:+955520802916" className="block transition hover:text-white">+90 552 080 2916</a>
+                                <a href="#" className="block transition hover:text-white">Privacy Policy</a>
+                                <a href="#" className="block transition hover:text-white">Terms of Use</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mt-10 border-t border-white/10 pt-8">
+                        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+                            <div>
+                                <h4 className="text-2xl font-bold text-white">Studio notes</h4>
+                                <p className="mt-3 text-base text-slate-300">Occasional emails on design, brand and what we’re building. No spam.</p>
+
+                                <div className="mt-5 flex max-w-xl flex-col gap-3 sm:flex-row">
+                                    <input
+                                        type="email"
+                                        placeholder="you@email.com"
+                                        className="flex-1 rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition focus:border-[#5acfc3]"
+                                    />
+                                    <button
+                                        type="button"
+                                        className="rounded-2xl bg-[#5acfc3] px-7 py-3 text-base font-semibold text-slate-900 transition hover:bg-[#78ddd2]"
+                                    >
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mt-8 flex items-center justify-between border-t border-white/10 pt-6 text-sm text-slate-300">
+                        <p>© 2026 Repena. All rights reserved.</p>
                     </div>
                 </div>
+
+                <a
+                    href="https://wa.me/211000000000"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="fixed bottom-6 right-6 inline-flex items-center gap-3 rounded-full bg-[#5acfc3] px-5 py-3 text-base font-semibold text-slate-900 shadow-[0_18px_40px_rgba(90,207,195,0.45)] transition hover:bg-[#78ddd2]"
+                >
+                    <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-slate-900/30 bg-white/60 text-xs">◔</span>
+                    Message us on WhatsApp
+                </a>
             </footer>
         </div>
     );
