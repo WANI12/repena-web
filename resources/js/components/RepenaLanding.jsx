@@ -2,7 +2,7 @@ const navItems = [
     { label: 'Services', href: '#services' },
     { label: 'Work', href: '#work' },
     { label: 'Process', href: '#process' },
-    { label: 'About', href: '#about' },
+    { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' },
 ];
 
@@ -515,7 +515,7 @@ export default function RepenaLanding() {
                                 <a href="#work" className="block transition hover:text-white">Work</a>
                                 <a href="#process" className="block transition hover:text-white">Process</a>
                                 <a href="#" className="block transition hover:text-white">Packages</a>
-                                <a href="#about" className="block transition hover:text-white">About</a>
+                                <a href="/about" className="block transition hover:text-white">About</a>
                                 <a href="#" className="block transition hover:text-white">Blog</a>
                                 <a href="/contact" className="block transition hover:text-white">Contact</a>
                             </div>

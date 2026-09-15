@@ -29,7 +29,7 @@ export default function ContactPage() {
                         <a href="/" className="transition hover:text-white">Home</a>
                         <a href="/#services" className="transition hover:text-white">Services</a>
                         <a href="/#work" className="transition hover:text-white">Work</a>
-                        <a href="/#about" className="transition hover:text-white">About</a>
+                        <a href="/about" className="transition hover:text-white">About</a>
                     </nav>
 
                     <a
@@ -237,7 +237,7 @@ export default function ContactPage() {
                                 <a href="/#work" className="block transition hover:text-white">Work</a>
                                 <a href="/#process" className="block transition hover:text-white">Process</a>
                                 <a href="#" className="block transition hover:text-white">Packages</a>
-                                <a href="/#about" className="block transition hover:text-white">About</a>
+                                <a href="/about" className="block transition hover:text-white">About</a>
                                 <a href="#" className="block transition hover:text-white">Blog</a>
                                 <a href="/contact" className="block transition hover:text-white">Contact</a>
                             </div>
