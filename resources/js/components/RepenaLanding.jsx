@@ -444,16 +444,16 @@ export default function RepenaLanding() {
 
                             <div className="flex flex-col gap-3 sm:flex-row">
                                 <a
-                                    href="mailto:hello@repena.co"
+                                    href="mailto:info@repenahq.com"
                                     className="rounded-full bg-[#5AA9E6] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#4b9ad9]"
                                 >
-                                    hello@repena.co
+                                    info@repenahq.com
                                 </a>
                                 <a
                                     href="tel:+211000000000"
                                     className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#5AA9E6] hover:text-[#4b9ad9]"
                                 >
-                                    +211 000 000 000
+                                    +211 922702881
                                 </a>
                             </div>
                         </div>
