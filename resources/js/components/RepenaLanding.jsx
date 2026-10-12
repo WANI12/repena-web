@@ -116,17 +116,17 @@ export default function RepenaLanding() {
                 <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
                     <div className="flex items-center gap-3">
                         <img
-                            src="/repena-logo.svg"
+                            src="/svgicon.png"
                             alt="Repena logo"
                             className="h-11 w-11 rounded-2xl object-cover shadow-lg shadow-[#5AA9E6]/20"
                         />
                         <div>
                             <p className="text-lg font-semibold tracking-tight text-white">Repena</p>
-                            <p className="text-[10px] uppercase tracking-[0.25em] text-slate-300">South Sudan</p>
+                            <p className="text-[10px] uppercase tracking-[0.25em] text-slate-300">Build Learn</p>
                         </div>
                     </div>
 
-                    <nav className="hidden items-center gap-8 text-sm text-slate-200 md:flex">
+                    <nav className="hidden items-center gap-8 text-sm text-slate-200 md:flex"> 
                         {navItems.map((item) => (
                             <a key={item.label} href={item.href} className="transition hover:text-white">
                                 {item.label}
@@ -450,10 +450,10 @@ export default function RepenaLanding() {
                                     info@repenahq.com
                                 </a>
                                 <a
-                                    href="tel:+211000000000"
+                                    href="tel:+211922702881"
                                     className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#5AA9E6] hover:text-[#4b9ad9]"
                                 >
-                                    +211 922702881
+                                    +211 922 702 881
                                 </a>
                             </div>
                         </div>
@@ -504,7 +504,7 @@ export default function RepenaLanding() {
                                 <p>UI/UX Design</p>
                                 <p>Websites &amp; Digital Presence</p>
                                 <p>Mobile Experiences</p>
-                                <p>Custom Software</p>
+                                <p>Consulting</p>
                                 <p>Online Sales &amp; Digital Offers</p>
                             </div>
                         </div>
@@ -524,8 +524,8 @@ export default function RepenaLanding() {
                         <div>
                             <h3 className="text-2xl font-semibold text-white">Contact</h3>
                             <div className="mt-5 space-y-3 text-base text-slate-300">
-                                <a href="mailto:info@repena.co" className="block transition hover:text-white">info@repena.co</a>
-                                <a href="tel:+955520802916" className="block transition hover:text-white">+90 552 080 2916</a>
+                                <a href="mailto:info@repenahq.com" className="block transition hover:text-white">info@repenahq.com</a>
+                                <a href="tel:+211922702881" className="block transition hover:text-white">+211 922 702 881</a>
                                 <a href="#" className="block transition hover:text-white">Privacy Policy</a>
                                 <a href="#" className="block transition hover:text-white">Terms of Use</a>
                             </div>
@@ -561,7 +561,7 @@ export default function RepenaLanding() {
                 </div>
 
                 <a
-                    href="https://wa.me/211000000000"
+                    href="https://wa.me/211922702881"
                     target="_blank"
                     rel="noreferrer"
                     className="fixed bottom-6 right-6 inline-flex items-center gap-3 rounded-full bg-[#5acfc3] px-5 py-3 text-base font-semibold text-slate-900 shadow-[0_18px_40px_rgba(90,207,195,0.45)] transition hover:bg-[#78ddd2]"
